@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     pomodoroButton.addEventListener('click', () => {
         resetTimer();
-        setTimer(1);
+        setTimer(25);
     });
     shortPauseButton.addEventListener('click', () => {
         resetTimer();
-        setTimer(10);
+        setTimer(5);
     });
     longPauseButton.addEventListener('click', () => {
         resetTimer();
-        setTimer(25);
+        setTimer(15);
     });
 
     Display();
