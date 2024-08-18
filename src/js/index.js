@@ -101,7 +101,7 @@ fullscreenButton.addEventListener('click', () => {
     }
 });
 
-/* Essa função é chamada quando o botão do Instagram que fica no lado direito da página é apertado. Quando ele é pressionaado chama
+/* Essa função é chamada quando o botão do Instagram que fica no lado direito da página é apertado. Quando ele é pressionado chama
 ela, que tem como objetivo passar como parametro para uma outra função, que tem como intuito abrir links, os dois links dos Instagram 
 dos criadores da página.*/
 function abrirLinksInsta() {
@@ -112,9 +112,9 @@ function abrirLinksInsta() {
     abrirAbas(urls);
 }
 
-/* Essa função é chamada quando o incone do Linkedin que fica no lado direito da página é pressionado. Quando ele é apertado chama 
+/* Essa função é chamada quando o ícone do Linkedin que fica no lado direito da página é pressionado. Quando ele é apertado chama 
 ela e seu intuito é passar como parâmetro para essa outra função que abre links o link de cada um dos Likedins dos criadores da 
-página*/
+página.*/
 function abrirLinksLinkedin() {
     var urls = [
         'https://www.linkedin.com/in/camila-piscioneri-magalh%C3%A3es-5486732b1/',
@@ -123,6 +123,8 @@ function abrirLinksLinkedin() {
     abrirAbas(urls);
 }
 
+/* Essa função, assim como as duas anteriores, é chamada quando um ícone que fica no lado direito é pressionado, e esse ícone é o do
+GitHub. Ao ser acionada ela passa para a função "abrirAbas()" os links dos respectivos criadores do Pomodoro.*/
 function abrirLinksGithub() {
     var urls = [
         'https://github.com/Dr-Verdin',
