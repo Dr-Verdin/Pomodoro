@@ -101,6 +101,9 @@ fullscreenButton.addEventListener('click', () => {
     }
 });
 
+/* Essa função é chamada quando o botão do Instagram que fica no lado direito da página é apertado. Quando ele é apertado chama
+essa função e ela passa como parametro para uma outra função, que tem como intuito abrir links, os dois links dos Instagram dos 
+criadores da página.*/
 function abrirLinksInsta() {
     var urls = [
         'https://www.instagram.com/camzz_psc/',
