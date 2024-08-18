@@ -101,9 +101,9 @@ fullscreenButton.addEventListener('click', () => {
     }
 });
 
-/* Essa função é chamada quando o botão do Instagram que fica no lado direito da página é apertado. Quando ele é apertado chama
-essa função e ela passa como parametro para uma outra função, que tem como intuito abrir links, os dois links dos Instagram dos 
-criadores da página.*/
+/* Essa função é chamada quando o botão do Instagram que fica no lado direito da página é apertado. Quando ele é pressionaado chama
+ela, que tem como objetivo passar como parametro para uma outra função, que tem como intuito abrir links, os dois links dos Instagram 
+dos criadores da página.*/
 function abrirLinksInsta() {
     var urls = [
         'https://www.instagram.com/camzz_psc/',
@@ -112,6 +112,9 @@ function abrirLinksInsta() {
     abrirAbas(urls);
 }
 
+/* Essa função é chamada quando o incone do Linkedin que fica no lado direito da página é pressionado. Quando ele é apertado chama 
+ela e seu intuito é passar como parâmetro para essa outra função que abre links o link de cada um dos Likedins dos criadores da 
+página*/
 function abrirLinksLinkedin() {
     var urls = [
         'https://www.linkedin.com/in/camila-piscioneri-magalh%C3%A3es-5486732b1/',
