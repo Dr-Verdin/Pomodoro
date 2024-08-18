@@ -88,6 +88,9 @@ Display();
 
 const fullscreenButton = document.getElementById('icone_fullscreen');
 
+/* A função tem como objetivo fazer a tela ficar ou sair do FullScreen quando o botão que tem no site for apertado. Quando o
+evento de click acontece essa função testa se a tela já está em FullScreen ou não olhando o valor de "fullscreenButton" e se 
+não estiver em tela cheia ele coloca, se não ele tira.*/
 fullscreenButton.addEventListener('click', () => {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen().catch(err => {
