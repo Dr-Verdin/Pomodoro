@@ -9,11 +9,15 @@ let isRunning = false;
 
 const bellSound = new Audio('src/js/bell.mp3.mp3');
 
+/* O evento "DomContentLoaded" faz com que quando a pagina terminar de ser carregada que seja executada a função que
+está declarada dentro do evento.*/
 document.addEventListener('DOMContentLoaded', () => {
     const pomodoroButton = document.getElementById('pomodoro-button');
     const shortPauseButton = document.getElementById('short-pause-button');
     const longPauseButton = document.getElementById('long-pause-button');
 
+    /* Essa função tem como objetivo tranformar o tempo que aparece no Display em minutos para segundos e controla quanto
+    tempo falta para o timer acabar*/
     function setTimer(minutes) {
         totalTime = minutes * 60;
         remainingTime = totalTime;
