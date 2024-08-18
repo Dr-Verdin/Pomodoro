@@ -133,6 +133,7 @@ function abrirLinksGithub() {
     abrirAbas(urls);
 }
 
+/* Essa é a função tem o objetivo de abrir os links que ela recebe através dos parâmetros quando é chamada.*/
 function abrirAbas(urls) {
     urls.forEach(function(url) {
         window.open(url, '_blank');
