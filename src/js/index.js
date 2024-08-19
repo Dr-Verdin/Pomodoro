@@ -9,34 +9,43 @@ let isRunning = false;
 
 const bellSound = new Audio('src/js/bell.mp3.mp3');
 
-/* O evento "DomContentLoaded" faz com que quando a pagina terminar de ser carregada que seja executada a função que
-está declarada dentro do evento.*/
+/* O evento "DomContentLoaded" faz com que quando a pagina terminar de ser carregada que seja executado o bloco de código
+que está dentro do evento.*/
 document.addEventListener('DOMContentLoaded', () => {
     const pomodoroButton = document.getElementById('pomodoro-button');
     const shortPauseButton = document.getElementById('short-pause-button');
     const longPauseButton = document.getElementById('long-pause-button');
 
-    /* Essa função tem como objetivo tranformar o tempo que aparece no Display em minutos para segundos e controla quanto
-    tempo falta para o timer acabar*/
+    /* Essa função tem como objetivo receber a quantidade de minutos que será o timer, tranformar em segundos para um melhor
+    controle do tempo restante e chamar a função que seta o display.*/
     function setTimer(minutes) {
         totalTime = minutes * 60;
         remainingTime = totalTime;
         Display();
     }
 
+    /* Essa serve para que quando o botão "pomodoro" for clicado o timer seja setado para 25 minutos. Ela faz isso chamando
+    uma função que reseta o timer e chamando a função "setTimer()", onde é passado pelos parâmetros o valor 25.*/
     pomodoroButton.addEventListener('click', () => {
         resetTimer();
         setTimer(25);
     });
+    /* Essa função daqui seta o time para 5 minutos quando o botão "short pause" é pressionado. Ela se utiliza do mesmo método
+    da anterior para setar o timer.*/
     shortPauseButton.addEventListener('click', () => {
         resetTimer();
         setTimer(5);
     });
+    /* Já essa seta o time para 15 minutos quando é apertado o botão "long pause". Essa também se utiliza do mesmo método das
+    anteriores.*/
     longPauseButton.addEventListener('click', () => {
         resetTimer();
         setTimer(15);
     });
 
+    /* Essa chamada da função "Display" serve apenas para deixar setado que a página sempre irá iniciar com o tempo do pomodoro, 
+    que é de 25 minutos. Isso porque a varíavel "totalTime" é inicializada com o valor, em segundos, de 25 minutos quando é 
+    criada.*/
     Display();
 });
 
